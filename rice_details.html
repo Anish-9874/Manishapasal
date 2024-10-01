@@ -1,0 +1,69 @@
+{% include "header.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Details - Manisha Kirana Pasal</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+</head>
+<body>
+
+
+    <div class="item-grid">
+        <div class="item-card">
+            <img src="{% static 'images/urja.jpg' %}" alt="Basmati Rice">
+            <div class="item-name">Urja Chamal</div>
+            <div class="item-price">Rs. 2650</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/anuj.jpg' %}" alt="Jasmine Rice">
+            <div class="item-name">Anuj Chamal</div>
+            <div class="item-price">Rs. 2050</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/buddhagate.jpg' %}" alt="Sushi Rice">
+            <div class="item-name">Buddha Gate</div>
+            <div class="item-price">Rs. 2350</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/newari.jpg' %}" alt="White Rice">
+            <div class="item-name">Newari Chamal</div>
+            <div class="item-price">Rs. 3400</div>
+        </div>
+       
+        <div class="item-card">
+            <img src="{% static 'images/newari1.jpg' %}" alt="Jasmine Rice">
+            <div class="item-name">Newari 1 kg Chamal</div>
+            <div class="item-price">Rs. 125</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/harpal.jpg' %}" alt="Sushi Rice">
+            <div class="item-name">Harpal Usineko Basmati Chamal</div>
+            <div class="item-price">Rs. 3200</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/siverhill.jpg' %}" alt="White Rice">
+            <div class="item-name">Silver Hill</div>
+            <div class="item-price">Rs. 2700</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+{% include "footer.html" %}

@@ -1,0 +1,73 @@
+{% include "header.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maida Details - Manisha Kirana Pasal</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+
+</head>
+<body>
+
+
+    <div class="item-grid">
+        <div class="item-card">
+            <img src="{% static 'images/maida.png' %}" alt="Maida">
+            <div class="item-name">Maida</div>
+            <div class="item-price">Rs. 80/kg</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/aata.jpg' %}" alt="Aata">
+            <div class="item-name">Aata 2kg</div>
+            <div class="item-price">Rs. 200</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/aata.jpg' %}" alt="Aata">
+            <div class="item-name">Aata 5kg</div>
+            <div class="item-price">Rs. 480</div>
+        </div>
+        <div class="item-card">
+            <img src="{% static 'images/cheura.jpg' %}" alt="Maida">
+            <div class="item-name">Cheura</div>
+            <div class="item-price">Rs. 95/kg</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/chini.jpg' %}" alt="Aata">
+            <div class="item-name">Chini 2kg</div>
+            <div class="item-price">Rs. 115</div>
+        </div>
+        
+        <div class="item-card">
+            <img src="{% static 'images/salt.jpg' %}" alt="Aata">
+            <div class="item-name">Salt 1kg</div>
+            <div class="item-price">Rs. 30</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/prawn.jpg' %}" alt="Aata">
+            <div class="item-name">Prawn</div>
+            <div class="item-price">Rs. 45</div>
+        </div>
+        
+        <div class="item-card">
+            <img src="{% static 'images/papad.jpg' %}" alt="Aata">
+            <div class="item-name">Papad</div>
+            <div class="item-price">Rs. 20</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+{% include "footer.html" %}

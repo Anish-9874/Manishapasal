@@ -1,0 +1,82 @@
+{% include "header.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to your CSS file -->
+    <style>
+        /* Additional styles for contact details */
+        .contact-details {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 6px solid #4CAF50;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-details:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+        }
+
+        .contact-item h3 {
+            margin-bottom: 5px;
+            color: #34495e;
+        }
+
+        .contact-item p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-details">
+            <h2>Shop Information</h2>
+            <div class="contact-item">
+                <h3>Shop Name:</h3>
+                <p>Manisha Kirana Pasal</p>
+            </div>
+            <div class="contact-item">
+                <h3>Proprietor's Name:</h3>
+                <p>Apsara Basnet</p>
+                <p>Ganesh Basnet</p>
+            </div>
+            <div class="contact-item">
+                <h3>Contact Email:</h3>
+                <p><a href="mailto:apsara.basnet7777@gmail.com">apsara.basnet7777@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone Number:</h3>
+                <p>+977-9846008148</p>
+                <p>+977-9817183305</p>
+            </div>
+            <div class="contact-item">
+                <h3>Location:</h3>
+                <p>Satipipal 5, Gorkha (Dhara tala ko pasal)</p>
+            </div>
+            <div class="contact-item">
+                <h3>Opening Hours:</h3>
+                <p>Sunday - Saturday: 5:00 AM - 8:00 PM</p>
+            </div>
+            <div class="contact-item">
+                <h3>More Information:</h3>
+                <p>We offer a wide variety of grocery products with a good amount of discount.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+</body>
+</html>

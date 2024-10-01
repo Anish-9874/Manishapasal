@@ -1,0 +1,111 @@
+{% include "header.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to your external CSS file -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styling */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Service Section Styling */
+        .service-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 6px solid #4CAF50;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-section h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .service-section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 0;
+            color: #555;
+        }
+
+        /* Image Styling */
+        .scooter-image {
+            display: block;
+            margin: 30px auto; /* Center the image */
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+
+        <!-- Service Sections -->
+        <div class="service-section">
+            <h2>In-store Shopping Assistance</h2>
+            <p>Our friendly staff is always available to help you find the products you need. Whether you’re looking for specific ingredients or suggestions for meal planning, we're here to assist you with your shopping experience.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Custom Orders</h2>
+            <p>Need something special? We offer custom orders for bulk purchases, party supplies, or specific products not readily available in-store. Contact us in advance to arrange your order, and we'll make sure it's ready for you.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Fresh Produce Guarantee</h2>
+            <p>We guarantee the freshness of our fruits, vegetables, and other perishable goods. If you're not satisfied with the quality of our fresh products, we'll happily replace them or offer a refund.</p>
+        </div>
+
+        <div class="service-section">
+            <h2>Delivery Service</h2>
+            <p>We offer fast and convenient delivery for all your grocery needs. Place your order by phone, and we will deliver your groceries to your home or business, ensuring fresh and timely delivery.</p>
+        </div>
+
+        <!-- Scooter Image Section -->
+        <img src="{% static 'images/scooter.jpg' %}" alt="Scooter" class="scooter-image">
+    </div>
+
+    {% include "footer.html" %}
+</body>
+</html>

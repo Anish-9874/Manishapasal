@@ -1,0 +1,62 @@
+{% include "header.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Details - Manisha Kirana Pasal</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+</head>
+<body>
+
+
+    <div class="item-grid">
+        <div class="item-card">
+            <img src="{% static 'images/oil.jpg' %}" alt="Basmati Rice">
+            <div class="item-name">Koselee Mustard Oil</div>
+            <div class="item-price">Rs. 2900/pack</div>
+            <div class="item-price">Rs. 160/piece</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/oil2.jpg' %}" alt="Jasmine Rice">
+            <div class="item-name">Koselee Sunflower Oil</div>
+            <div class="item-price">Rs. 2200/pack</div>
+            <div class="item-price">Rs. 120/piece</div>
+        </div>
+
+        <div class="item-card">
+            <img src="{% static 'images/tori.jpg' %}" alt="Sushi Rice">
+            <div class="item-name">Mustard Oil</div>
+            <div class="item-price">Rs. 2050/pack</div>
+            <div class="item-price">Rs. 110/piece</div>
+        </div>
+        
+        <div class="item-card">
+            <img src="{% static 'images/sunflow.jpg' %}" alt="White Rice">
+            <div class="item-name">Sunflower Oil</div>
+            <div class="item-price">Rs. 2100/pack</div>
+            <div class="item-price">Rs. 110/piece</div>
+        </div>
+               
+        <div class="item-card">
+            <img src="{% static 'images/soya.jpg' %}" alt="White Rice">
+            <div class="item-name">Soyabean Oil</div>
+            <div class="item-price">Rs. 2100/pack</div>
+            <div class="item-price">Rs. 110/piece</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+{% include "footer.html" %}

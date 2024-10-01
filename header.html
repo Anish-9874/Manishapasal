@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Header styling */
+        .header {
+            background-image: url("{% static 'images/download (1).jpg' %}"); /* Background image */
+            background-size: cover; /* Ensure background covers the header */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Avoid repeating the image */
+            color: rgb(233, 236, 236); /* Default text color */
+            padding: 20px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+            height: 300px; /* Adjust height as needed */
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1; /* Ensure the text appears above the background */
+            color: red; /* Change this to your desired color for the title */
+            font-weight: bold; /* Make the text bold */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+        }
+        .nav {
+            margin-top: 20px;
+            position: relative;
+            z-index: 1; /* Ensure navigation is above background */
+        }
+        .nav a {
+            display: block; /* Display links one below the other */
+            color: white; /* Change this to your desired color for the links */
+            text-decoration: none;
+            font-size: 1.5em; /* Larger font size for aesthetics */
+            font-weight: bold; /* Make text bold */
+            transition: color 0.3s;
+            margin: 10px 0; /* Space between links */
+        }
+        .nav a:hover {
+            color: #170bf9; /* Change this to your desired hover color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header starts -->
+    <header class="header">
+        <h1>Manisha Kirana Pasal</h1>
+        <h1>Satipipal 5, Gorkha</h1>
+        <div class="nav">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About Us</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'aboutme' %}">About Me</a> <!-- Added About Me link -->
+        </div>
+    </header>
+    <!-- Header ends -->
+</body>
+</html>

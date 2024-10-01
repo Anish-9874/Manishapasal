@@ -1,0 +1,80 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Manisha Kirana Pasal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        .about-container {
+            position: relative; /* Required for the pseudo-element */
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #1c0fab; /* Border around the container */
+            border-radius: 10px; /* Rounded corners for the box */
+            background-color: #ffffff; /* White background for the box */
+            max-width: 400px; /* Optional: Set a max-width */
+            margin: 50px auto; /* Center the box in the middle of the page */
+            overflow: hidden; /* Hide any overflow */
+        }
+        .about-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px; /* Width of the left colored border */
+            height: 100%; /* Full height of the container */
+            background-color: #1c0fab; /* Color of the left border */
+            border-top-left-radius: 10px; /* Round top left corner */
+            border-bottom-left-radius: 10px; /* Round bottom left corner */
+        }
+        .about-photo {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .about-info {
+            font-size: 1.2em;
+            color: #333; /* Change text color as needed */
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1c0fab; /* Icon color */
+            font-size: 1.5em; /* Size of icons */
+        }
+    </style>
+</head>
+<body>
+
+<div class="about-container">
+    <img src="{% static 'images/anish.jpg' %}" alt="Your Name" class="about-photo"> <!-- Replace with your photo -->
+    <h1>About Me</h1>
+    <div class="about-info">
+        <p><strong>Name:</strong> Anish Basnet</p>
+        <p><strong>Date of Birth:</strong> 2004/Sept/04</p>
+        <p><strong>Role:</strong> Creator of this website</p>
+        <p><strong>Email:</strong> <a href="mailto:your-email@example.com">anishbasnet323@gmail.com</a></p> <!-- Replace with your email -->
+        <p>Welcome to my website! </p>
+        <p>Feel free to reach out to me for any inquiries!</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com/anish.basnet.988373" target="_blank">
+            <i class="fab fa-facebook-f"></i> <!-- Facebook icon -->
+        </a>
+        <a href="https://www.instagram.com/anish_basnet49" target="_blank">
+            <i class="fab fa-instagram"></i> <!-- Instagram icon -->
+        </a>
+    </div>   
+</div>
+
+</body>
+</html>
